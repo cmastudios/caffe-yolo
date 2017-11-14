@@ -218,9 +218,6 @@ void DetectionLossLayer<Dtype>::Backward_cpu(const vector<Blob<Dtype>*>& top,
   }
 }
 
-#ifdef CPU_ONLY
-STUB_GPU(DetectionLossLayer);
-#endif
 
 INSTANTIATE_CLASS(DetectionLossLayer);
 REGISTER_LAYER_CLASS(DetectionLoss);
